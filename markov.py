@@ -80,7 +80,7 @@ def merge_models(model_list):
     for model in model_list:
         for gram in model.keys():
             if gram in final_model:
-                final_model[gram] + model[gram]
+                final_model[gram] += model[gram]
             else:
                 final_model[gram] = model[gram]
 
